@@ -69,8 +69,33 @@ import Navbar from "../components/Navbar";
     }
   }
   @media only screen and (max-width: 806px) {
-    .hero {
+    .hero p {
       width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .hero h1 {
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .about-me {
+      width: 98%;
+    }
+  }
+  @media only screen and (max-width: 442px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  }
+  @media only screen and (max-width: 901px) {
+    .cards {
+      grid-template-columns: repeat(1, 1fr);
+      gap: 90px 0px;
+    }
+    .card {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>
@@ -133,7 +158,7 @@ import Navbar from "../components/Navbar";
         provident animi nisi consectetur mollitia aut in nam dolorum quam
         voluptas explicabo laboriosam et esse ratione nobis? Dignissimos illo
         libero quisquam maxime, sint quibusdam facilis itaque magnam neque eum,
-        deleniti nisi. Soluta consequuntur quibusdam minus.
+        deleniti nisi.
       </p>
       <div class="about__buttons flex gap-5 mt-10 w-fit mx-auto">
         <button
