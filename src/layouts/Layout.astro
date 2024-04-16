@@ -1,0 +1,27 @@
+---
+const { title } = Astro.props;
+import Navbar from "../components/Navbar";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="web developer with an incredible set of skills"
+    />
+    <title>{title}</title>
+    <style>
+      body {
+        background-color: #121212;
+        color: white;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- <Navbar client:load /> -->
+    <slot />
+  </body>
+</html>
